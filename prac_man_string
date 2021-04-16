@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+#include <cstring>
+using namespace std;
+//1
+string dividir(string cadena, int count) {
+	string divisor;
+	while (cadena.length() % count != 0) {
+		cadena = cadena + 'X';
+	}
+	for (int i=0; i < (cadena.length()) / count; i++) {
+		
+	}
+	return cadena;
+}
+//2
+int str_to_int(string num) {
+	int convertido;
+	convertido = stoi(num);
+	return convertido;
+}
+//3
+string int_to_str(int num) {
+	string convert;
+	convert = std::to_string(num);
+	return convert;
+}
+using namespace std;
+int main() {
+	//1
+	string mensaje = "yo soy el pato";
+	dividir(mensaje, 4);
+	//2
+	string aco = "1234";
+	int nuevo = str_to_int(aco);
+	cout << nuevo;
+	//3
+	int num = 1234;
+	string convertido=int_to_str(num);
+	cout << convertido;
+}
